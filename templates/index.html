@@ -1,0 +1,65 @@
+<!-- <form action="/submit" method="post">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <input type="submit" value="Submit">
+</form> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>price generator</title>
+</head>
+
+<body>
+    <form action="/submit" method="post">
+        <label for="distance">distance</label>
+        <input type="text" id="distance" name="distance" value="10"><br>
+
+        <label for="time">time</label>
+        <input type="text" id="time" name="time" value="10"><br>
+
+        <label for="route">traffic</label>
+        <input type="text" id="route" name="route" value="2"><br>
+
+        <label for="holiday">holiday:</label>
+        <input type="text" id="holiday" name="holiday" value="0"><br>
+
+        <label for="weather">weather:</label>
+        <input type="text" id="weather" name="weather" value="0"><br>
+
+        <label for="oil_price">oil price:</label>
+        <input type="text" id="oil_price" name="oil_price" value="5"><br>
+
+        <br>
+
+        <label for="distance_weight">distance weight</label>
+        <input type="text" id="distance_weight" name="distance_weight" value="30"><br>
+
+        <label for="time_weight">time weight</label>
+        <input type="text" id="time_weight" name="time_weight" value="20"><br>
+
+        <label for="route_weight">traffic weight</label>
+        <input type="text" id="route_weight" name="route_weight" value="10"><br>
+
+        <label for="holiday_weight">holiday weight</label>
+        <input type="text" id="holiday_weight" name="holiday_weight" value="5"><br>
+
+        <label for="weather_weight">weather weight</label>
+        <input type="text" id="weather_weight" name="weather_weight" value="5"><br>
+
+        <label for="oil_price_weight">oil price</label>
+        <input type="text" id="oil_price_weight" name="oil_price_weight" value="30"><br>
+
+        <br>
+
+        <input type="submit" value="calculate">
+    </form>
+
+    <br>
+    {% if price %}
+    <p>The price of the ride is: {{ price }} CAD.</p>
+    {% endif %}
+</body>
+
+</html>
